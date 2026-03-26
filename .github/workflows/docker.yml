@@ -26,3 +26,6 @@ jobs:
 
       - name: Push Docker Image
         run: docker push shashikant0187/devops-node-app:latest
+      - name: Trigger Kubernetes Update
+        run: |
+          echo "Deployment will auto-update on next restart"
